@@ -1,0 +1,34 @@
+package trazilice;
+
+public class Main {
+	
+	// pomoćni metod za štampu niza
+	public static void print_arr(int[] arr) {
+		for(int e : arr)
+			System.out.print(e + " ");
+		System.out.println("");
+	}
+
+	public static void main(String[] args) {
+		// pretraga celobrojnog niza
+		int[] niz = {8,7,0,-5,10,88,11,3,0,78,-11};
+		
+		print_arr(niz);
+		
+		// Linear search
+		System.out.println("\nLinear search:");
+		System.out.println("0 je na poziciji ... " + LinearSearch.li_search(niz, 0)); // ima
+		System.out.println("4 je na poziciji ... " + LinearSearch.li_search(niz, 4)); // nema
+
+		// Binary search
+		System.out.println("\nBinary search:");
+		System.out.println("0 je na poziciji ... " + BinarySearch.bi_search(niz, 0)); // ima
+		System.out.println("4 je na poziciji ... " + BinarySearch.bi_search(niz, 4)); // nema
+		
+		// Fibonacci search
+		System.out.println("\nFibonacci search:");
+		System.out.println("0 je na poziciji ... " + FibonacciSearch.fi_search(niz, 0)); // ima
+		System.out.println("4 je na poziciji ... " + FibonacciSearch.fi_search(niz, 4)); // nema
+	}
+
+}

@@ -1,0 +1,45 @@
+package razvrstavanje;
+
+
+/**
+ * 
+ * @author emma
+ * 
+ * bubble sort
+ * 
+ * poredi se svaki sa svakim
+ * poređenje prestaje kada su svi međusobno upoređeni
+ * nije pogodno za veliku količinu podataka ...
+ * jer je zahtevno u resursima (memorija i brzina)
+ *
+ */
+
+public class Mehurici implements Comparable<T> {
+	
+	@Override
+	public int compareTo(Object arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+	public static<T> void bubble_sort(T[] arr) {
+		int d = arr.length - 1; // index poslednjeg člana
+		for(int i=0; i < d; i++) {
+			for(int j=0; j < d - i; j++) {
+				if( (Integer) arr[j] > (Integer) arr[j+1] ) {
+					System.out.println(" " + arr[j] + "->" + arr[j+1] + " ; ");
+					Swap.swap(arr, j, j+1);
+					System.out.print(" -swapped " + arr[j] + "->" + arr[j+1] + "- ");
+				}				
+			}
+			Swap.show_arr(arr);
+		}
+		System.out.println( arr[0].getClass().getSimpleName());
+		
+	}
+
+	
+
+}

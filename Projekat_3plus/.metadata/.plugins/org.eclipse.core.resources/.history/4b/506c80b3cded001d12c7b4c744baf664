@@ -1,0 +1,38 @@
+package razvrstavanje;
+/**
+ * 
+ * @author emma
+ * 
+ * zamena mesta elemenata niza
+ * OK je samo za referentne tipove podataka
+ * 
+ * pokriva skalarne tipove, a koje pripadaju nekom referentnom tipu:
+ * double (pokriva sve brojeve)
+ * String (dobro, nije baš skalar :)
+ * char
+ *
+ */
+public class Swap {
+	
+	public static void swap(double x, double y) {
+		double tmp;
+		tmp = x;
+		x = y;
+		y = tmp;
+	}
+	
+	public static void swap(String x, String y) {
+		String tmp;
+		tmp = x;
+		x = y;
+		y = tmp;
+	}
+	
+	public static void swap(char x, char y) {
+		char tmp;
+		tmp = x;
+		x = y;
+		y = tmp;
+	}
+		
+}

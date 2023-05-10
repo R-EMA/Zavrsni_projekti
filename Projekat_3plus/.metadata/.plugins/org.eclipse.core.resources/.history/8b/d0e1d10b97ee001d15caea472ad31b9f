@@ -1,0 +1,30 @@
+package razvrstavanje;
+
+/**
+ * 
+ * @author emma
+ * 
+ * Sortiranje niza - MERGE sort
+ *
+ */
+
+public class MergeSort {
+	
+	/**
+	 * 
+	 * @param <T>
+	 * @param arr
+	 * 
+	 * MERGE sort
+	 * brzo i stabilno, pogodno za velike količine podataka
+	 * bazirano na ispitivanje vrednosti sa suprotnih krajeva i 
+	 * deljenje istog na polovine (polovina od celog, polovina od polovine, polovina od četvrtine, ...)
+	 * zahteva dodatan prostor za čuvanje podataka (međurezultat)
+	 * 
+	 */
+	public static<T> void merge_sort(T[] arr) {
+		
+	}
+	
+
+}

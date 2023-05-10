@@ -1,0 +1,21 @@
+package razvrstavanje;
+
+/**
+ * 
+ * @author emma
+ * 
+ * različiti načini sortiranja nizova
+ *
+ */
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		int[] niz = {1, 5, 0, 11, 12, 8, 8, 7, 15, 4, 3, 2};
+		// sortirano (asc): {0,1,2,3,4,5,7,8,8,11,12}
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package razvrstavanje;
+
+/**
+ * 
+ * @author emma
+ * 
+ * bubble sort
+ * 
+ * poredi se svaki sa svakim
+ * poređenje prestaje kada su svi međusobno upoređeni
+ * nije pogodno za veliku količinu podataka ...
+ * jer je zahtevno u resursima (memorija i brzina)
+ *
+ */
+
+public class Mehurici {
+	
+	
+
+}

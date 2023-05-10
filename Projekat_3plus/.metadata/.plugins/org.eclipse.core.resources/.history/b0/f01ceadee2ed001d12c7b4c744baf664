@@ -1,0 +1,67 @@
+package razvrstavanje;
+
+
+/**
+ * 
+ * @author emma
+ * 
+ * Sortiranje niza
+ * 
+ * bubble sort
+ * 
+ */
+
+public class Sortiri {
+	
+	/**
+	 * 
+	 * @param <T> 
+	 * @param arr
+	 * 
+	 * bubble sort
+	 * sporo i zahtevno, nije za veliku količinu podataka
+	 * proverava se svaki sa svakim
+	 * 
+	 */
+	public static<T> void bubble_sort(T[] arr) {	
+		int d = arr.length - 1; // index poslednjeg člana
+		//String tip = arr[0].getClass().getSimpleName();
+		/*
+		for(int i=0; i < d; i++) {
+			for(int j=0; j < d - i; j++) {
+				if( arr[j].toString().compareTo(arr[j+1].toString()) >  0) {
+					Swap.swap(arr, j, j+1);
+				}				
+			}
+		}
+		*/
+		int r = 0;
+		for(int i=0; i < d; i++) {
+			for(int j=0; j < d - i; j++) {
+				r = Swap.compare(arr[j], arr[j+1]);
+				System.out.print(r + "-");
+				if( Swap.compare(arr[j], arr[j+1]) >  0) {
+					Swap.swap(arr, j, j+1);
+				}				
+			}
+			System.out.print(" \t****");
+		}
+		
+	}
+	
+	/**
+	 * 
+	 * @param <T>
+	 * @param arr
+	 * 
+	 * selection sort
+	 * u svakom prolasku izdvaja najmanju (asc) / najveću (desc) vrednost
+	 * i smešta je na početku
+	 */
+	public static<T> void selection_sort(T[] arr) {
+		
+	}
+
+	
+
+}

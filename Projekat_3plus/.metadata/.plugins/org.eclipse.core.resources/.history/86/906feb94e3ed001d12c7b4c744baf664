@@ -1,0 +1,61 @@
+package razvrstavanje;
+/**
+ * 
+ * @author emma
+ * 
+ * zamena mesta elemenata niza
+ * OK je samo za referentne tipove podataka
+ * 
+ * dodatak.
+ * metod za štampu nizova
+ */
+public class Swap {
+	
+	// compare 
+	public static<T> int compare(T x, T y) {
+		String tip = x.getClass().getSimpleName();
+		int rezultat = 0; 	
+		/*
+		 * 0 za x = y
+		 * 1 za x > y
+		 * -1 za x < y
+		 */
+				
+		switch(tip) {			
+			case "Character", "String":
+				String xs = x.toString();
+				String ys = y.toString();
+				rezultat = xs.compareTo(ys);
+				break;
+			default:
+				// brojevi (double, kao najopštiji broj)
+				Double xd = Double.parseDouble(x.toString());
+				Double yd = Double.parseDouble(y.toString());
+				if(xd > yd)
+					rezultat = 1;
+				if(xd < yd)
+					rezultat = -1;
+				else
+					rezultat = 0;
+		}
+		 
+		return rezultat;
+	}
+	
+	// swap
+	public static<T> void swap(T[] arr, int i, int j) {
+		T tmp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = tmp;	
+	}
+	
+	// print
+	public static<T> void show_arr(T[] arr) {
+		for(T e : arr) {
+			System.out.print(e + " ");
+		}
+		System.out.println("");
+	}
+	
+	
+}

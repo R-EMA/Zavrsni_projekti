@@ -1,0 +1,14 @@
+package trazilice;
+
+/**
+ * 
+ * @author emma
+ * 
+ * FibonacciSearch
+ * pretraga zasnovana na fibonačijevim brojevima: 1,1,2,3,5,8,...
+ *
+ */
+
+public class FibonacciSearch {
+
+}

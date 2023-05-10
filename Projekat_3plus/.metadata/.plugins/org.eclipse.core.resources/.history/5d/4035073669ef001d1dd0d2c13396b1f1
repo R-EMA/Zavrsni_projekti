@@ -1,0 +1,37 @@
+package trazilice;
+
+/**
+ * 
+ * @author emma
+ * 
+ * BINARY search
+ * zahteva da podaci budu sortirani
+ * vreme pristupa svakom elementu je konstantno
+ * pretraga se odvija iz više koraka
+ * I - pronađe se središnja vrednost m=(L+R)/2
+ * II - ako  je ta vrednost veća od tražene, dalje se pretražuju levo (L,m)
+ *      a ako je veća pretražuje se desno (m+1,R)
+ * III - ponavljaju se koraci I i II sve dok se ne dođe do tražene vrednosti,
+ *       ili dok ne ostane samo jedan element različit od tražene vrednosti
+ * IV - ako je vrednost pronađena, vraća njen indeks; u suprotnom vraća -1
+ * 
+ *
+ */
+
+//package razvrstavanje;
+//import Sortiranje.razvrstavanje.*;
+
+public class BinarySearch {
+	
+	// samo za celobrojne indekse
+	public static int bi_search(int[] arr, int val) {
+		/*
+		 * prvo sortirati niz
+		 * iskoristiću HeapSort.heap_sort() metod jer je on prilagođen za celobrojne nizove
+		 * (ostali su univerzalni, ali samo za nizove instancirane iz klasa omotača)
+		 */
+		//HeapSort.heap_sort(arr);
+		return -1;
+	}
+
+}

@@ -1,0 +1,19 @@
+package razvrstavanje;
+/**
+ * 
+ * @author emma
+ * 
+ * zamena mesta elemenata niza
+ * OK je samo za referentne tipove podataka
+ *
+ */
+public class Swap {
+	
+	public static void swap(double x, double y) {
+		double tmp;
+		tmp = x;
+		x = y;
+		y = tmp;
+	}
+	
+}

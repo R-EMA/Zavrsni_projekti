@@ -1,0 +1,33 @@
+package trazilice;
+
+import razvrstavanje.HeapSort;
+
+/**
+ * 
+ * @author emma
+ * 
+ * FibonacciSearch
+ * pretraga zasnovana na fibonačijevim brojevima: 1,1,2,3,5,8,...
+ * zahteva da niz bude sortiran
+ * zavadi i vladaj algoritam
+ * 
+ * osnovna ideja je da se prvo pronađe najmanji fibonačijev broj koji je 
+ *    veći ili jednak dužini niza.
+ *
+ */
+
+public class FibonacciSearch {
+	
+	//prilagođeno samo za celobrojne nizove
+	public static int fi_search(int[] arr, int val) {
+		
+		//prvo sortirati - Heap sort metod iz projekta Sortiranje
+		HeapSort.heap_sort(arr);
+		
+		//pa onda pretraživati
+		
+		
+		return -1;
+	}
+
+}

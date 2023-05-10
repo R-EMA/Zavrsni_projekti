@@ -1,0 +1,29 @@
+package razvrstavanje;
+/**
+ * 
+ * @author emma
+ * 
+ * zamena mesta elemenata niza
+ * OK je samo za referentne tipove podataka
+ * 
+ */
+public class Swap {
+		
+	public static<T> void swap(T[] arr, int i, int j) {
+		System.out.println("pre-swap " + arr[i] + " " + arr[j]);
+		T tmp;
+		tmp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = tmp;
+		System.out.println("pre-swap " + arr[i] + " " + arr[j]);
+	}
+	
+	public static<T> void show_arr(T[] arr) {
+		for(T e : arr) {
+			System.out.print(e + " ");
+		}
+		System.out.println("");
+	}
+	
+	
+}

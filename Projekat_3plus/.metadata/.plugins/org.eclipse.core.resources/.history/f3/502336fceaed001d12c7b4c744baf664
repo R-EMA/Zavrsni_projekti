@@ -1,0 +1,88 @@
+package razvrstavanje;
+
+
+/**
+ * 
+ * @author emma
+ * 
+ * Sortiranje niza
+ * 
+ * bubble sort
+ * 
+ */
+
+public class Sortiri {
+	
+	/**
+	 * 
+	 * @param <T> 
+	 * @param arr
+	 * 
+	 * bubble sort
+	 * sporo i zahtevno, nije za veliku količinu podataka
+	 * proverava se svaki sa svakim
+	 * 
+	 */
+	public static<T> void bubble_sort(T[] arr) {	
+		int d = arr.length - 1; // index poslednjeg člana
+		int r = 0;
+		for(int i=0; i < d; i++) {
+			for(int j=0; j < d - i; j++) {
+				r = Swap.compare(arr[j], arr[j+1]);		
+				if( r > 0) {
+					Swap.swap(arr, j, j+1);
+				}				
+			}	
+		}
+		
+	}
+	
+	/**
+	 * 
+	 * @param <T>
+	 * @param arr
+	 * 
+	 * selection sort
+	 * u svakom prolasku izdvaja najmanju (asc) / najveću (desc) vrednost
+	 * i smešta je na početku
+	 * manji broj prolazaka u odnosu na bubble sort i manje zauzeće resursa
+	 */
+	public static<T> void selection_sort(T[] arr) {
+		int d = arr.length; // dužina niza
+		int min_index; // vrednost najmanjeg indeksa
+		for(int i = 0; i < d - 1; i++) {
+			min_index = i;
+			for(int j = i + 1; j < d; j++) {
+				if ( Swap.compare(arr[j], arr[min_index]) < 0 ) {
+					min_index = j;
+				}
+			}
+			// swap values
+			Swap.swap(arr, min_index, i);
+		}
+		
+	}
+
+	/*
+	int size = array.length;
+
+    for (int step = 0; step < size - 1; step++) {
+      int min_idx = step;
+
+      for (int i = step + 1; i < size; i++) {
+
+        // To sort in descending order, change > to < in this line.
+        // Select the minimum element in each loop.
+        if (array[i] < array[min_idx]) {
+          min_idx = i;
+        }
+      }
+
+      // put min at the correct position
+      int temp = array[step];
+      array[step] = array[min_idx];
+      array[min_idx] = temp;
+    }
+	*/
+
+}
