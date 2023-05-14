@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-19">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/core/library/core.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/core/library/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/core/library/jogl-all.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/lib/ant.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/lib/ant-launcher.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/lib/flatlaf.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/lib/jna.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/lib/jna-platform.jar"/>
+	<classpathentry kind="lib" path="/home/emma/prgs/processing-4.2/lib/pde.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
